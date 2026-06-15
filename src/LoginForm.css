@@ -1,4 +1,6 @@
-.login-form {
+/*Login form container*/
+
+/* .login-form {
   max-width: 360px;
   margin: 48px auto;
   padding: 24px;
@@ -72,5 +74,117 @@
 
 .login-form__button:disabled {
   background: #9bbfe0;
+  cursor: not-allowed;
+} */
+
+/* Login form container */
+.login-form {
+  width: 100%;
+  max-width: 400px;
+
+  padding: 30px;
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.15);
+
+  box-sizing: border-box;
+}
+
+/* Form heading */
+.login-form__title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2d3436;
+}
+
+/* Input group */
+.login-form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+/* Label styling */
+.login-form__field label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+/* Input styling */
+.login-form__field input {
+  padding: 12px;
+
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  transition: all 0.2s ease;
+}
+
+/* Input focus effect */
+.login-form__field input:focus {
+  outline: none;
+  border-color: #0984e3;
+
+  box-shadow:
+    0 0 0 3px rgba(9, 132, 227, 0.2);
+}
+
+/* Validation messages */
+.login-form__error {
+  margin-top: 5px;
+  color: #d63031;
+  font-size: 12px;
+}
+
+/* Server error box */
+.login-form__server-error {
+  padding: 10px;
+
+  margin-bottom: 15px;
+
+  background-color: #ffeaea;
+  border: 1px solid #ffbaba;
+  border-radius: 6px;
+
+  color: #d63031;
+  font-size: 13px;
+}
+
+/* Login button */
+.login-form__button {
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #0984e3;
+  color: white;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease,
+              transform 0.2s ease;
+}
+
+/* Hover effect */
+.login-form__button:hover:not(:disabled) {
+  background-color: #0873c4;
+  transform: translateY(-2px);
+}
+
+/* Disabled state */
+.login-form__button:disabled {
+  background-color: #b2bec3;
   cursor: not-allowed;
 }
